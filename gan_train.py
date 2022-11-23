@@ -8,11 +8,11 @@ import torchvision
 import torch.optim as optim
 from torchsummary import summary
 
-from utils import CustomDataSet, sample_data, data_sampler
+from tools.utils import CustomDataSet, sample_data, data_sampler
 from models import Generator, UNetGenerator
 from stylegan_model import Discriminator
-from augmentation import augment
-from loss import d_logistic_loss, g_nonsaturating_loss
+from training_module.augmentation import augment
+from training_module.loss import d_logistic_loss, g_nonsaturating_loss
 
 transform = torchvision.transforms.Compose([
     torchvision.transforms.RandomHorizontalFlip(),

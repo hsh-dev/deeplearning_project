@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 
-from augmentation import upfirdn2d
+from training_module.augmentation import upfirdn2d
 
 
 class Discriminator(nn.Module):
