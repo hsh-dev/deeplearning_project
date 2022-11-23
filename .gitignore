@@ -1,0 +1,10 @@
+*.png
+*.JPG
+*.jpeg
+*.jpg
+
+./StyleGAN2-ADA
+
+*__pycache__
+*.ipynb
+*.DS_Store
